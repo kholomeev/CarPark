@@ -34,6 +34,7 @@
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.bEnter = new System.Windows.Forms.Button();
+            this.bExit = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,6 +43,7 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.bExit, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.tbPassword, 0, 3);
@@ -93,7 +95,7 @@
             this.tbPassword.Margin = new System.Windows.Forms.Padding(9, 3, 3, 3);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(129, 20);
-            this.tbPassword.TabIndex = 2;
+            this.tbPassword.TabIndex = 3;
             this.tbPassword.UseSystemPasswordChar = true;
             // 
             // tbUsername
@@ -104,19 +106,29 @@
             this.tbUsername.Margin = new System.Windows.Forms.Padding(9, 3, 3, 3);
             this.tbUsername.Name = "tbUsername";
             this.tbUsername.Size = new System.Drawing.Size(129, 20);
-            this.tbUsername.TabIndex = 3;
+            this.tbUsername.TabIndex = 2;
             // 
             // bEnter
             // 
             this.bEnter.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel1.SetColumnSpan(this.bEnter, 2);
-            this.bEnter.Location = new System.Drawing.Point(105, 167);
+            this.bEnter.Location = new System.Drawing.Point(25, 167);
             this.bEnter.Name = "bEnter";
             this.bEnter.Size = new System.Drawing.Size(110, 27);
             this.bEnter.TabIndex = 4;
             this.bEnter.Text = "Войти";
             this.bEnter.UseVisualStyleBackColor = true;
             this.bEnter.Click += new System.EventHandler(this.bEnter_Click);
+            // 
+            // bExit
+            // 
+            this.bExit.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.bExit.Location = new System.Drawing.Point(185, 167);
+            this.bExit.Name = "bExit";
+            this.bExit.Size = new System.Drawing.Size(110, 27);
+            this.bExit.TabIndex = 5;
+            this.bExit.Text = "Выйти";
+            this.bExit.UseVisualStyleBackColor = true;
+            this.bExit.Click += new System.EventHandler(this.bExit_Click);
             // 
             // LoginForm
             // 
@@ -142,6 +154,7 @@
         private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.TextBox tbUsername;
         private System.Windows.Forms.Button bEnter;
+        private System.Windows.Forms.Button bExit;
     }
 }
 

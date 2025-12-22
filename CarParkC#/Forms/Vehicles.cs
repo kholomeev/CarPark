@@ -50,6 +50,7 @@ namespace CarParkC_.Forms
                     );
                 }
 
+                reader.Close();
                 command.ExecuteNonQuery();
             }
             catch (SqliteException ex)

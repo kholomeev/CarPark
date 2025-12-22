@@ -48,6 +48,7 @@ namespace CarParkC_.Forms
                     );
                 }
 
+                reader.Close();
                 command.ExecuteNonQuery();
             }
             catch (SqliteException ex)
@@ -58,6 +59,12 @@ namespace CarParkC_.Forms
             {
                 MessageBox.Show($"{ex.Message}");
             }
+        }
+
+        private void bExit_Click(object sender, EventArgs e)
+        {
+            Close();
+            
         }
     }
 }

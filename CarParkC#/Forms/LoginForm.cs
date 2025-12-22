@@ -35,8 +35,8 @@ namespace CarParkC_
 
                 if (db.CheckUser(tbUsername.Text, tbPassword.Text))
                 {
-                    Close();
                     new CarParkMenuManager().Show();
+                    Hide();
                 }
                 else
                 {
@@ -113,6 +113,11 @@ namespace CarParkC_
             {
                 MessageBox.Show($"{ex.Message}");
             }
+        }
+
+        private void bExit_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
