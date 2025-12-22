@@ -60,7 +60,6 @@ namespace CarParkC_
                 var connectionString = "DataSource=carpark.db";
                 var connection = new SqliteConnection(connectionString);
                 connection.Open();
-                
 
                 var command = connection.CreateCommand();
                 command.CommandText =

@@ -172,11 +172,17 @@
     <EmbeddedResource Include="Forms\Notification.resx">
       <DependentUpon>Notification.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ParkSpots.resx">
+      <DependentUpon>ParkSpots.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\TicketToUser.resx">
       <DependentUpon>TicketToUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Users.resx">
       <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Vehicles.resx">
+      <DependentUpon>Vehicles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
