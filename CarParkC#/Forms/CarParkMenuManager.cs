@@ -31,13 +31,13 @@ namespace CarParkC_
         private void bUsersTable_Click(object sender, EventArgs e)
         {
             Hide();
-            new Users().Show();
+            new Clients().Show();
         }
 
         private void bSpotsTable_Click(object sender, EventArgs e)
         {
             Hide();
-            new ParkSpots().Show();
+            new Spots().Show();
         }
 
         private void bVehiclesTable_Click(object sender, EventArgs e)

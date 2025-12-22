@@ -1,6 +1,6 @@
 ﻿namespace CarParkC_.Forms
 {
-    partial class Users
+    partial class Clients
     {
         /// <summary>
         /// Required designer variable.
@@ -29,24 +29,46 @@
         private void InitializeComponent()
         {
             this.dgvUsers = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvUsers
             // 
             this.dgvUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUsers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.UserName,
+            this.Phone});
             this.dgvUsers.Location = new System.Drawing.Point(331, 12);
             this.dgvUsers.Name = "dgvUsers";
             this.dgvUsers.Size = new System.Drawing.Size(457, 426);
             this.dgvUsers.TabIndex = 1;
             // 
-            // Users
+            // ID
+            // 
+            this.ID.HeaderText = "ID клиента";
+            this.ID.Name = "ID";
+            // 
+            // UserName
+            // 
+            this.UserName.HeaderText = "ФИО клиента";
+            this.UserName.Name = "UserName";
+            // 
+            // Phone
+            // 
+            this.Phone.HeaderText = "Номер телефона";
+            this.Phone.Name = "Phone";
+            // 
+            // Clients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dgvUsers);
-            this.Name = "Users";
+            this.Name = "Clients";
             this.Text = "Users";
             this.Load += new System.EventHandler(this.Users_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).EndInit();
@@ -57,5 +79,8 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvUsers;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UserName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
     }
 }

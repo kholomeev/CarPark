@@ -11,14 +11,14 @@ using System.Windows.Forms;
 
 namespace CarParkC_.Forms
 {
-    public partial class Users : Form
+    public partial class Spots : Form
     {
-        public Users()
+        public Spots()
         {
             InitializeComponent();
         }
 
-        private void Users_Load(object sender, EventArgs e)
+        private void ParkSpots_Load(object sender, EventArgs e)
         {
             try
             {
@@ -29,19 +29,19 @@ namespace CarParkC_.Forms
                 var command = connection.CreateCommand();
                 command.CommandText =
                 @"
-                    INSERT INTO USERS(name, phone)
-                     VALUES('Турмалинов Е.Р.', '+7 989 325 88 33');
+                    INSERT INTO PARKSPOTS(vehicle_id, statusFree)
+                     VALUES(1, true);
 
-                    SELECT * FROM USERS;
+                    SELECT * FROM PARKSPOTS;
                 ";
 
                 var reader = command.ExecuteReader();
 
-                dgvUsers.Rows.Clear();
+                dgvSpots.Rows.Clear();
 
                 while (reader.Read())
                 {
-                    dgvUsers.Rows.Add(
+                    dgvSpots.Rows.Add(
                         reader.GetInt32(0),
                         reader.GetString(1),
                         reader.GetInt32(2)

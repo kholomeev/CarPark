@@ -66,7 +66,7 @@ namespace CarParkC_
                 @"
                 PRAGMA foreign_keys = ON;
                 
-                CREATE TABLE IF NOT EXISTS CLIENT (
+                CREATE TABLE IF NOT EXISTS CLIENTS (
                   client_id INTEGER PRIMARY KEY,
                   name VARCHAR(30) NOT NULL,
                   phone VARCHAR(15) NOT NULL
@@ -89,7 +89,7 @@ namespace CarParkC_
                   pass TEXT NOT NULL
                 );
 
-                CREATE TABLE IF NOT EXISTS PARKSPOT (
+                CREATE TABLE IF NOT EXISTS PARKSPOTS (
                   spot_number INTEGER PRIMARY KEY,
                   vehicle_id INTEGER NOT NULL,
                   statusFree BOOL NOT NULL,

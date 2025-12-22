@@ -137,11 +137,11 @@
     <Compile Include="Forms\Notification.Designer.cs">
       <DependentUpon>Notification.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ParkSpots.cs">
+    <Compile Include="Forms\Spots.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ParkSpots.Designer.cs">
-      <DependentUpon>ParkSpots.cs</DependentUpon>
+    <Compile Include="Forms\Spots.Designer.cs">
+      <DependentUpon>Spots.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\TicketToUser.cs">
       <SubType>Form</SubType>
@@ -149,11 +149,11 @@
     <Compile Include="Forms\TicketToUser.Designer.cs">
       <DependentUpon>TicketToUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Users.cs">
+    <Compile Include="Forms\Clients.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Users.Designer.cs">
-      <DependentUpon>Users.cs</DependentUpon>
+    <Compile Include="Forms\Clients.Designer.cs">
+      <DependentUpon>Clients.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Vehicles.cs">
       <SubType>Form</SubType>
@@ -172,14 +172,14 @@
     <EmbeddedResource Include="Forms\Notification.resx">
       <DependentUpon>Notification.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ParkSpots.resx">
-      <DependentUpon>ParkSpots.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Spots.resx">
+      <DependentUpon>Spots.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TicketToUser.resx">
       <DependentUpon>TicketToUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Users.resx">
-      <DependentUpon>Users.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Clients.resx">
+      <DependentUpon>Clients.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Vehicles.resx">
       <DependentUpon>Vehicles.cs</DependentUpon>
