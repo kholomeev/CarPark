@@ -35,7 +35,7 @@ namespace CarParkC_
 
                 if (db.CheckUser(tbUsername.Text, tbPassword.Text))
                 {
-                    Hide();
+                    Close();
                     new CarParkMenuManager().Show();
                 }
                 else
